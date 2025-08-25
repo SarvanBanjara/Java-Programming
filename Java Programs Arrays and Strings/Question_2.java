@@ -3,7 +3,9 @@
 // Sample Input → n (size of array) : 5
 // Sample Input → Elements of array : 1 -23 56 -69 36
 // Sample Output → Positive Elements : 1 56 36
-import java.util.Arrays;
+
+
+// when Array.stream  is used import java.util.Arrays;
 import java.util.Scanner;
 
 public class Question_2 {

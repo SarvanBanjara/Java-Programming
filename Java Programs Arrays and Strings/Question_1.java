@@ -1,6 +1,5 @@
 
 //Write a program  to accept n elements  in an array and print it in normal order and in reverse order
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Question_1 {
