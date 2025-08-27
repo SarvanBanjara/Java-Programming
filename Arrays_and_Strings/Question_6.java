@@ -19,21 +19,27 @@ public class Question_6 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
+        
         // i<n-1 kyuki last ke 1 elemt khud hi apne position pr hoga
         for (int i = 0; i < n - 1; i++) {
             // i<n-1-i kyuki hr baar lagest elemt apne position me hoga to usey fir sort
             // krne ki jrurat nhi
+            // swapped isliye taki agr koi swapping n ho to array sorted h to break krdo ;
+            boolean swapped=false;
             for (int j = 0; j < n - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    swapped=true;
                 }
+            }
+            if (!swapped) {break;
+                
             }
         }
 
-        System.out.print("The sorted array is :");
+        System.out.print("The sorted array is : ");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }

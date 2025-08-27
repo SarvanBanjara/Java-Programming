@@ -18,13 +18,13 @@ public class Question_7 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int copy = arr[0];
+        int firstelement = arr[0];
 
         for (int i = 0; i < n - 1; i++) {
             arr[i] = arr[i + 1];
         }
 
-        arr[n - 1] = copy;
+        arr[n - 1] = firstelement;
         System.out.print("Array after left rotation by 1 element : ");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
