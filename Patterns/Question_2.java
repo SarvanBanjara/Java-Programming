@@ -6,7 +6,6 @@ package Patterns;
 //       * *
 //         *
 
-
 import java.util.Scanner;
 
 public class Question_2 {
@@ -14,15 +13,15 @@ public class Question_2 {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the length of pattern : ");
-        int n =sc.nextInt();
-        for(int i =1;i<=n;i++){
-            //spaces 
-            for(int j=1;j<i;j++){
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            // spaces
+            for (int j = 1; j < i; j++) {
                 System.out.print("  ");
             }
 
-            //stars
-            for(int j =n;j>=i;j--){
+            // stars
+            for (int j = n; j >= i; j--) {
                 System.out.print("* ");
             }
             System.out.print("\n");
