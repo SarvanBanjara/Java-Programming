@@ -15,10 +15,9 @@ public class Question_34 {
             System.out.print("Enter the height : ");
             int n=sc.nextInt();
             for(int row=1;row<=n;row++){
-                int input=row;
                 for(int col=1;col<=n;col++){
-                    System.out.printf("%-3d",input);
-                    input+=row;
+                    System.out.printf("%-3d",col*row);
+                    
                 }
                 System.out.println();
             }

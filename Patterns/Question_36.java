@@ -15,9 +15,9 @@ public class Question_36 {
         System.out.print("Enter the height : ");
         int n = sc.nextInt();
         for (int row = 1; row <= n; row++) {
-            int input = row;
-            for (int col = 1; col <= n; col++) {
-                System.out.print(((input++ - 1) % n) + 1);
+            
+            for (int col = row; col <= n+row; col++) {
+                System.out.print(((col - 1) % n) + 1 +" ");
 
             }
             System.out.println();

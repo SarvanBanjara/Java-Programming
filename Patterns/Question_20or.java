@@ -22,20 +22,19 @@ public class Question_20or {
                 System.out.print(" ");
             }
 
-            int input = row;
+            
 
             // printing no for row to one
-            input = row;
-            for (int col = 1; col <= row; col++) {
-                System.out.print(input--);
+            for (int col = row; col >=1; col--) {
+                System.out.print(col);
             }
 
             // printing no from 1 to row
-            input = 1;
+            
 
             for (int col = 1; col <= row - 1; col++) {
 
-                System.out.print(++input);
+                System.out.print(col+1);
 
             }
 

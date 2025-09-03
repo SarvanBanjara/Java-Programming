@@ -14,19 +14,19 @@ public class Question_32 {
         System.out.print("Enter the height : ");
         int n =sc.nextInt();
         for(int row=1;row<=n;row++){
-            char input='A';
+            
             //printing spaces
             for(int col=1;col<=n-row;col++){
                 System.out.print("  ");
             }
             //printing hald pattern
             for(int col=1;col<=row;col++){
-                System.out.print(input++ +" ");
+                System.out.printf("%c ",col+64);
             }
-            input--;
+            
             //printing other half pattern
-            for(int col=1;col<row;col++){
-                System.out.print(--input +" ");
+            for(int col=row-1;col>=1;col--){
+                System.out.printf("%c ",col+64);
             }
             System.out.println();
         }
