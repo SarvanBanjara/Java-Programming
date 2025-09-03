@@ -11,7 +11,7 @@ public class Question_37 {
         
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the height : ");
-        int n =sc.nextInt(),mid=(n+1)/2;
+        int n =sc.nextInt();
         
         for(int row=1;row<=n;row++){
             int input=1;
